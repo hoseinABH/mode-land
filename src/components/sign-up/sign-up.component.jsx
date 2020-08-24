@@ -53,9 +53,11 @@ class SignUp extends React.Component {
   render() {
     const { displayName, email, password, confirmPassword } = this.state;
     return (
-      <div style={{ direction: 'rtl' }} className="col-lg-5 offset-lg-1">
-        <h2 className="title">من حساب کاربری ندارم</h2>
-        <span>از طریق ایمیل و کلمه عبور خود ثبت نام کنید</span>
+      <div style={{ direction: 'rtl' }} className="col-lg-5 offset-lg-1 my-5">
+        <h4 className="title">من حساب کاربری ندارم</h4>
+        <span className="text-muted">
+          از طریق ایمیل و کلمه عبور خود ثبت نام کنید
+        </span>
         <form className="sign-up-form" onSubmit={this.handleSubmit}>
           <FormInput
             type="text"

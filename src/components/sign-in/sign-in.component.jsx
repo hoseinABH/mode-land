@@ -34,9 +34,9 @@ class SignIn extends React.Component {
 
   render() {
     return (
-      <div style={{ direction: 'rtl' }} className="col-lg-5 offset-lg-1">
-        <h2>من حساب کاربری دارم</h2>
-        <span>با ایمیل و کلمه عبور خود وارد شوید</span>
+      <div style={{ direction: 'rtl' }} className="col-lg-5 offset-lg-1 my-5">
+        <h4>من حساب کاربری دارم</h4>
+        <span className="text-muted ">با ایمیل و کلمه عبور خود وارد شوید</span>
 
         <form onSubmit={this.handleSubmit}>
           <FormInput
@@ -55,12 +55,16 @@ class SignIn extends React.Component {
             label="کلمه عبور"
             required
           />
-          <div className="d-flex">
-            <CustomButton className="mx-2" type="submit">
+          <div className="d-lg-flex">
+            <CustomButton className="mx-2 my-2" type="submit">
               {' '}
               ورود{' '}
             </CustomButton>
-            <CustomButton onClick={signInWithGoogle} isGoogleSignIn>
+            <CustomButton
+              className="my-2"
+              onClick={signInWithGoogle}
+              isGoogleSignIn
+            >
               ورود از طریق گوگل
             </CustomButton>
           </div>
